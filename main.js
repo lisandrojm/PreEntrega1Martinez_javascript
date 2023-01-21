@@ -1,9 +1,11 @@
-// Bienvenida
+// Bienvenida / Uso de alert
+
 alert(
   "Bienvenido a Freelander Calculator. Una herramienta simple para que usted sepa cuanto cobrar como freelancer."
 );
 
-// Ingreso de la moneda para hacer el calculo
+// Ingreso de la moneda para hacer el calculo / Uso de prompt, while y switch
+
 let moneda = prompt(
   "Ingrese la moneda con la que desea hacer el cálculo:"
 ).toLowerCase();
@@ -25,7 +27,9 @@ while (moneda !== "dolar" && moneda !== "dolares") {
       );
       break;
     default:
-      alert("Usted no ingresó una moneda válida o el sistema no puede hacer el cálculo con esa moneda.");
+      alert(
+        "Usted no ingresó una moneda válida o el sistema no puede hacer el cálculo con esa moneda."
+      );
       break;
   }
   moneda = prompt(
@@ -33,8 +37,15 @@ while (moneda !== "dolar" && moneda !== "dolares") {
   ).toLowerCase();
 }
 
+// Cambio del string "dolar" singular a plural "dolares" para el caso en el que el usuario lo ingrese en singular // Uso del if
 
-alert(`Felicitaciones usted ingresó ${moneda}, la moneda internacional por excelencia`)
+if ((moneda = "dolar")) {
+  moneda = "dolares";
+}
+
+alert(
+  `Felicitaciones usted ingresó la moneda ${moneda}, el bien de intercambio internacional por excelencia`
+);
 
 // FOR CLASICO
 
