@@ -4,14 +4,14 @@
 // Bienvienida.
 
 alert(
-  "Bienvenido a Freelo Calculator. Una herramienta simple para que usted sepa cuanto cobrar como freelancer."
+  "Bienvenido a Freelo Calculator. Una herramienta simple para sepas cuanto cobrar como freelancer."
 );
 
 // prompt / while / switch
 // Solicitud de ingreso de la moneda para hacer el calculo.
 
 let moneda = prompt(
-  "Ingrese la moneda con la que desea hacer el cálculo:"
+  "Ingresa la moneda con la que deseas hacer el cálculo:"
 ).toLowerCase();
 
 while (
@@ -26,7 +26,7 @@ while (
     case "peso argentino":
     case "pesos argentinos":
       alert(
-        "¿Usted está loco?. ¿Cómo va a calcular en pesos jaja?. Esa moneda devalúa constantemente. Elija bien por favor."
+        "¿Pero estás loco?. ¿Cómo vas a calcular en pesos jaja?. Esa moneda devalúa constantemente. Elegí bien por favor."
       );
       break;
     case "real":
@@ -36,17 +36,17 @@ while (
     case "libra":
     case "libras":
       alert(
-        "No le recomendamos hacer el cálculo con esa moneda ya que es de uso local. Elija por favor una moneda de intercambio y ahorro a nivel mundial."
+        "No te recomendamos hacer el cálculo con esa moneda ya que es de uso local. Elegí por favor una moneda de intercambio y ahorro a nivel mundial."
       );
       break;
     default:
       alert(
-        "Usted no ingresó una moneda válida o el sistema no puede hacer el cálculo con esa moneda."
+        "No ingresaste una moneda válida o el sistema no puede hacer el cálculo con esa moneda."
       );
       break;
   }
   moneda = prompt(
-    "Ingrese la moneda con la que desea hacer el cálculo:"
+    "Ingresa la moneda con la que deseas hacer el cálculo:"
   ).toLowerCase();
 }
 
@@ -64,7 +64,7 @@ const pluralize = () => {
 pluralize();
 
 alert(
-  "Usted eligió " +
+  "Elegiste " +
     moneda.toLocaleUpperCase() +
-    ". Va a poder hacer un cálculo correcto"
+    ". Vas a poder hacer un cálculo correcto!"
 );
