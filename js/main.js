@@ -63,8 +63,18 @@ const pluralize = () => {
 
 pluralize();
 
-alert(
+let ingresos = prompt(
+  "Ingresa el monto en " +
+    moneda.toLocaleUpperCase() +
+    " de lo que pretendes ganar mensualmente."
+).toLowerCase();
+
+/* alert(
   "Elegiste " +
     moneda.toLocaleUpperCase() +
     ". Vas a poder hacer un cálculo correcto!"
-);
+); */
+
+/* for (let ingresos = 0; ingresos < 1000; ingresos++) {
+  alert(Hello);
+} */
