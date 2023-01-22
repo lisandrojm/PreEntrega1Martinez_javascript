@@ -63,16 +63,41 @@ const pluralize = () => {
 
 pluralize();
 
-let ingresos = prompt(
-  "Ingresa el monto en " +
+let ingresos = parseInt(
+  prompt(
+    "Ingresa el monto en " +
+      moneda.toLocaleUpperCase() +
+      " de lo que pretendes ganar mensualmente."
+  ).toLowerCase()
+);
+
+while (isNaN(ingresos)) {
+  alert(
+    "No ingresaste un número válido. Si escribiste el número con letras vuelve a intentarlo con números."
+  );
+  ingresos = parseInt(
+    prompt(
+      "Ingresa el monto en " +
+        moneda.toLocaleUpperCase() +
+        " de lo que pretendes ganar mensualmente."
+    ).toLowerCase()
+  );
+}
+
+alert(
+  "Pretendés ganar " +
+    ingresos +
+    " " +
     moneda.toLocaleUpperCase() +
-    " de lo que pretendes ganar mensualmente."
-).toLowerCase();
+    " mensuales. Vamos a calcular como lograrlo."
+);
 
 /* alert(
-  "Elegiste " +
+  "Pretendés ganar " +
+    ingresos +
+    " " +
     moneda.toLocaleUpperCase() +
-    ". Vas a poder hacer un cálculo correcto!"
+    " mensuales. Vamos bien."
 ); */
 
 /* for (let ingresos = 0; ingresos < 1000; ingresos++) {
