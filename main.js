@@ -1,29 +1,40 @@
-// Bienvenida / Uso de alert
+// alert
+// Bienvienida.
 
 alert(
   "Bienvenido a Freelander Calculator. Una herramienta simple para que usted sepa cuanto cobrar como freelancer."
 );
 
-// Ingreso de la moneda para hacer el calculo / Uso de prompt, while y switch
+// prompt / while / switch
+// Solicitud de ingreso de la moneda para hacer el calculo.
 
 let moneda = prompt(
   "Ingrese la moneda con la que desea hacer el cálculo:"
 ).toLowerCase();
 
-while (moneda !== "dolar" && moneda !== "dolares") {
+while (
+  moneda !== "dolar" &&
+  moneda !== "dolares" &&
+  moneda !== "euro" &&
+  moneda !== "euros"
+) {
   switch (moneda) {
-    case "pesos":
     case "peso":
+    case "pesos":
+    case "peso argentino":
+    case "pesos argentinos":
       alert(
-        "Usted está loco?. Cómo va a calcular en pesos jaja? Esa moneda devalúa constantemente. Elija bien."
+        "¿Usted está loco?. ¿Cómo va a calcular en pesos jaja?. Esa moneda devalúa constantemente. Elija bien por favor."
       );
       break;
-    case "euro":
-    case "euros":
+    case "real":
+    case "reales":
+    case "peso uruguayo":
+    case "pesos uruguayos":
     case "libra":
     case "libras":
       alert(
-        "No le conviene hacer el cálculo con esa moneda. Le recomendamos elegir la moneda de intercambio y ahorro a nivel mundial por excelencia. Pista: Es de color verde."
+        "No le recomendamos hacer el cálculo con esa moneda ya que es de uso local. Elija por favor una moneda de intercambio y ahorro a nivel mundial."
       );
       break;
     default:
@@ -37,14 +48,23 @@ while (moneda !== "dolar" && moneda !== "dolares") {
   ).toLowerCase();
 }
 
-// Cambio del string "dolar" singular a plural "dolares" para el caso en el que el usuario lo ingrese en singular // Uso del if
+// arrow function // if //
+// Cambio del string "dolar" o "euro" de singular a plural para el caso en el que el usuario lo ingrese en singular. Para que quede bien en la redacción.
 
-if ((moneda = "dolar")) {
-  moneda = "dolares";
-}
+const pluralize = () => {
+  if (moneda === "dolar") {
+    moneda = "dolares";
+  } else {
+    moneda = "euros";
+  }
+};
+
+pluralize();
 
 alert(
-  `Felicitaciones usted ingresó la moneda ${moneda}, el bien de intercambio internacional por excelencia`
+  "Usted eligió " +
+    moneda.toLocaleUpperCase() +
+    ". Va a poder hacer un cálculo correcto"
 );
 
 // FOR CLASICO
