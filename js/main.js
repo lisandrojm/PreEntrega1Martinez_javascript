@@ -11,7 +11,7 @@ alert(
 // Solicitud de ingreso de la moneda para hacer el calculo.
 
 let moneda = prompt(
-  "Ingresa la moneda con la que deseas hacer el cálculo:"
+  "Ingresa la Moneda con la que deseas hacer el cálculo."
 ).toLowerCase();
 
 while (
@@ -46,7 +46,7 @@ while (
       break;
   }
   moneda = prompt(
-    "Ingresa la moneda con la que deseas hacer el cálculo:"
+    "Ingresa la Moneda con la que deseas hacer el cálculo."
   ).toLowerCase();
 }
 
@@ -89,7 +89,7 @@ alert(
     ingresos +
     " " +
     moneda.toLocaleUpperCase() +
-    " mensuales. Vamos a calcular como lograrlo."
+    " mensuales. Vamos a calcular como lograrlo "
 );
 
 /* alert(
