@@ -7,7 +7,7 @@ alert(
   "Bienvenido a Freelo Calculator. Una herramienta simple para que sepas cuanto cobrar como freelancer."
 );
 
-// prompt / while / switch
+// let / prompt / while / switch
 // Solicitud de ingreso de la moneda para hacer el calculo.
 
 let moneda = prompt(
@@ -52,12 +52,12 @@ while (
   ).toLowerCase();
 }
 
-// arrow function // if //
+// const / arrow function / if
 // Cambio del string "dolar o "dólar" o "euro" de singular a plural para el caso en el que el usuario lo ingrese en singular. Para que quede bien en la redacción.
 
 const pluralize = () => {
   if (moneda === "dolar" || moneda === "dólar") {
-    moneda = "dolares";
+    moneda = "dólares";
   } else {
     moneda = "euros";
   }
@@ -93,15 +93,3 @@ alert(
     moneda.toLocaleUpperCase() +
     " mensuales. Vamos a calcular cómo puedes lograrlo."
 );
-
-/* alert(
-  "Pretendés ganar " +
-    ingresos +
-    " " +
-    moneda.toLocaleUpperCase() +
-    " mensuales. Vamos bien."
-); */
-
-/* for (let ingresos = 0; ingresos < 1000; ingresos++) {
-  alert(Hello);
-} */
