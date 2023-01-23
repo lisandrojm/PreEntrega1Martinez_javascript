@@ -11,10 +11,12 @@ alert(
 // Solicitud de ingreso de la moneda para hacer el calculo.
 
 let moneda = prompt(
-  "Ingresa la Moneda con la que deseas hacer el cálculo."
+  "Ingresa la moneda con la que deseas hacer el cálculo."
 ).toLowerCase();
 
 while (
+  moneda !== "dólar" &&
+  moneda !== "dólares" &&
   moneda !== "dolar" &&
   moneda !== "dolares" &&
   moneda !== "euro" &&
@@ -26,7 +28,7 @@ while (
     case "peso argentino":
     case "pesos argentinos":
       alert(
-        "¿Pero estás loco?. ¿Cómo vas a calcular en pesos jaja?. Esa moneda devalúa constantemente. Elegí bien por favor."
+        "¿Pero estás loco?. ¿Cómo vas a calcular en pesos jaja?. Esa moneda devalúa constantemente. Elige bien por favor."
       );
       break;
     case "real":
@@ -36,7 +38,7 @@ while (
     case "libra":
     case "libras":
       alert(
-        "No te recomendamos hacer el cálculo con esa moneda ya que es de uso local. Elegí por favor una moneda de intercambio y ahorro a nivel mundial."
+        "No te recomendamos hacer el cálculo con esa moneda ya que es de uso local. Elige por favor una moneda de intercambio y ahorro a nivel mundial."
       );
       break;
     default:
@@ -46,15 +48,15 @@ while (
       break;
   }
   moneda = prompt(
-    "Ingresa la Moneda con la que deseas hacer el cálculo."
+    "Ingresa la moneda con la que deseas hacer el cálculo."
   ).toLowerCase();
 }
 
 // arrow function // if //
-// Cambio del string "dolar" o "euro" de singular a plural para el caso en el que el usuario lo ingrese en singular. Para que quede bien en la redacción.
+// Cambio del string "dolar o "dólar" o "euro" de singular a plural para el caso en el que el usuario lo ingrese en singular. Para que quede bien en la redacción.
 
 const pluralize = () => {
-  if (moneda === "dolar") {
+  if (moneda === "dolar" || moneda === "dólar") {
     moneda = "dolares";
   } else {
     moneda = "euros";
@@ -85,11 +87,11 @@ while (isNaN(ingresos)) {
 }
 
 alert(
-  "Pretendés ganar " +
+  "Pretendes ganar " +
     ingresos +
     " " +
     moneda.toLocaleUpperCase() +
-    " mensuales. Vamos a calcular cómo podés lograrlo."
+    " mensuales. Vamos a calcular cómo puedes lograrlo."
 );
 
 /* alert(
