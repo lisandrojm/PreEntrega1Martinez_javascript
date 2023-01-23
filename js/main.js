@@ -28,7 +28,7 @@ while (
     case "peso argentino":
     case "pesos argentinos":
       alert(
-        "¿Pero estás loco?. ¿Cómo vas a calcular en PESOS jaja?. Esa moneda devalúa constantemente. Elige bien por favor."
+        "¿Pero estás loco?. ¿Cómo vas a calcular en PESOS jaja?. Esa moneda devalúa constantemente. Elige por favor una moneda estable de intercambio y ahorro a nivel mundial."
       );
       break;
     case "real":
