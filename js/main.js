@@ -4,7 +4,7 @@
 // Bienvienida.
 
 alert(
-  "Bienvenido a Freelo Calculator. Una herramienta simple para sepas cuanto cobrar como freelancer."
+  "Bienvenido a Freelo Calculator. Una herramienta simple para que sepas cuanto cobrar como freelancer."
 );
 
 // prompt / while / switch
@@ -89,7 +89,7 @@ alert(
     ingresos +
     " " +
     moneda.toLocaleUpperCase() +
-    " mensuales. Vamos a calcular como lograrlo "
+    " mensuales. Vamos a calcular cómo podés lograrlo."
 );
 
 /* alert(
