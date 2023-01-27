@@ -56,7 +56,7 @@ while (
 // Cambio del string "dolar o "dólar" o "euro" de singular a plural para el caso en el que el usuario lo ingrese en singular. Para que quede bien en la redacción.
 
 const pluralize = () => {
-  if (moneda === "dolar" || moneda === "dólar") {
+  if (moneda === "dolar" || moneda === "dólar"|| moneda === "dolares"|| moneda === "dólares") {
     moneda = "dólares";
   } else {
     moneda = "euros";
